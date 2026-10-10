@@ -1,0 +1,9 @@
+<template>
+    <!-- Nested template handles the loop directive -->
+    <template for:each={languageSkillsList} for:item="language" for:index="index">
+            <lightning-input key={language.skill} type="checkbox" label={language.skill} onchange={handleInputChange} data-index={index}>{skill}</lightning-input>
+            <template lwc:if={language.isVisible}>
+                <p key={language.skill}>{language.hiddenText}</p>
+            </template>
+    </template>
+</template>
