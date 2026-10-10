@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Calculator">
+    <lightning-input type="number" name="Number 1" label="Enter 1st number" value={num1} data-id="num-1"></lightning-input>
+    <lightning-input type="number" name="Number 2" label="Enter 2nd number" value={num2} data-id="num-2"></lightning-input>
+    <lightning-button variant="brand" label="Add" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <p>{sum}</p>
+    </lightning-card>
+</template>
